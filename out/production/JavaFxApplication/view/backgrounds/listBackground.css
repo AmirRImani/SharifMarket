@@ -1,0 +1,5 @@
+.bodybg {
+    -fx-background-image: url("/images/shoppingList.jpg");
+    -fx-background-size: 100% 100%;
+
+}

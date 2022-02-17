@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" styleClass="bodybg" stylesheets="@../backgrounds/background.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.seller.MainMenu">
+    <right>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button alignment="CENTER" layoutX="85.0" layoutY="26.0" mnemonicParsing="false" onAction="#historyOrder" prefHeight="53.0" prefWidth="102.0" stylesheets="@../backgrounds/buttonPressed2.css" text="History of Orders" textFill="WHITE">
+               <font>
+                  <Font size="11.0" />
+               </font>
+                </Button>
+                <Button alignment="CENTER" layoutX="14.0" layoutY="100.0" mnemonicParsing="false" onAction="#productList" prefHeight="53.0" prefWidth="102.0" stylesheets="@../backgrounds/customerMarketButtons/productList.css" text="Product List" />
+                <Button alignment="CENTER" layoutX="85.0" layoutY="173.0" mnemonicParsing="false" onAction="#calculate" prefHeight="53.0" prefWidth="102.0" stylesheets="@../backgrounds/customerMarketButtons/logout.css" text="Sell Data" textFill="RED">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Button alignment="CENTER" layoutX="-1.0" layoutY="248.0" mnemonicParsing="false" onAction="#exit" prefHeight="53.0" prefWidth="102.0" stylesheets="@../backgrounds/customerMarketButtons/exit.css" text="Exit" textFill="BLUE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Label fx:id="labelName" layoutY="14.0" prefHeight="39.0" prefWidth="100.0">
+                    <font>
+                        <Font name="IranNastaliq" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>
